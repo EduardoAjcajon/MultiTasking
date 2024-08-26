@@ -1,0 +1,8 @@
+.btnRegistro button{
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: cadetblue;
+    margin-top: 2rem;
+}

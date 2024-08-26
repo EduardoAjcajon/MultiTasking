@@ -1,0 +1,264 @@
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    padding: 10px 20px;
+    height: 10rem;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+}
+
+.titulo span{
+    font-size: 3rem;
+}
+
+.tituloPrincipal {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+.opciones {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#barraBusqueda {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 200px;
+    font-size: 1rem;
+}
+
+.material-symbols-outlined {
+    font-size: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-contenido {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    position: relative; 
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+.modal-contenido h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #007BFF; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.task-list {
+    display: grid;
+    gap: 10px;
+}
+
+.task-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.task-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px dotted #ccc;
+    padding: 10px 0;
+}
+
+.task-name {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 10rem;
+    font-size: 2rem;
+}
+
+.task-name .material-symbols-outlined {
+    font-size: 24px;
+    color: green; 
+    margin-right: 10px;
+}
+
+.assigned {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.assigned .nombre {
+    font-size: 2rem;
+ 
+}
+
+.due-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.status {
+    background-color: yellow;
+    color: #fff;
+    width: 15rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-container div {
+    flex: 1;
+    margin: 15px;
+    min-width: 250px;
+}
+
+.footer-container h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-container p,
+.footer-container ul,
+.footer-container li {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+}
+
+.footer-container a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-container a:hover {
+    color: #f4f4f4;
+}
+
+.footer-bottom {
+    background-color: gray;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.eliminar-tarea {
+    background-color: red; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 10rem;
+    margin-left: 2rem;
+}
+
+.eliminar-tarea:hover {
+    background-color: #d32f2f; 
+}
+
+.eliminar-tarea:focus {
+    outline: none;
+}
